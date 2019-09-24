@@ -1,2 +1,2 @@
 # iostpay-oscommerce
-IOSTPay Oscommerce
+IOSTPay for Oscommerce
