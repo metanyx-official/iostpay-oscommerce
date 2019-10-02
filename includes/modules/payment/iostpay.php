@@ -1,24 +1,24 @@
 <?php
 /*
- $Id: iostwallet.php VER: 1.0.3443 $
+ $Id: iostpay.php VER: 1.0.3443 $
  osCommerce, Open Source E-Commerce Solutions
  http://www.oscommerce.com
  Copyright (c) 2008 osCommerce
  Released under the GNU General Public License
 */
 
-require_once(DIR_FS_CATALOG.'ext/modules/payment/iostwallet/iostwallet_functions.php');
+require_once(DIR_FS_CATALOG.'ext/modules/payment/iostpay/iostpay_functions.php');
 
-class iostwallet
+class iostpay
 {
     var $code, $title, $description, $enabled;
 
     // class constructor
-    function iostwallet	()
+    function iostpay()
     {
         global $order;
-        $this->signature = 'iostwallet|iostwallet|1.0|2.2';
-        $this->code = 'iostwallet';
+        $this->signature = 'iostpay|iostpay|1.0|2.2';
+        $this->code = 'iostpay';
         $this->title = MODULE_PAYMENT_IOSTWALLET_TEXT_TITLE;
         $this->public_title = MODULE_PAYMENT_IOSTWALLET_TEXT_PUBLIC_TITLE;
         $this->description = MODULE_PAYMENT_IOSTWALLET_TEXT_DESCRIPTION;
@@ -35,7 +35,7 @@ class iostwallet
         if (MODULE_PAYMENT_IOSTWALLET_GATEWAY_SERVER == 'Production')
         {
             // $this->form_action_url = 'http://localhost/iost/wallet.php';
-          $this->form_action_url =  tep_href_link('ext/modules/payment/iostwallet/wallet.php', '', 'SSL', false, false) ;
+          $this->form_action_url =  tep_href_link('ext/modules/payment/iostpay/wallet.php', '', 'SSL', false, false) ;
         
 		} else
         {
@@ -302,7 +302,7 @@ class iostwallet
                         }
                     }
                 }
-                    $cart->reset(true);
+                    // $cart->reset(true);
                 $cart_inpay_Standard_ID = $cartID.'-'.$insert_id;
                 tep_session_register('cart_iostwallet_Standard_ID');
             }
@@ -329,7 +329,7 @@ class iostwallet
         'order_id'=>substr($cart_inpay_Standard_ID, strpos($cart_inpay_Standard_ID, '-')+1),
         'custom'=>$customer_id,
         'no_note'=>'1',
-        'notify_url'=>tep_href_link('ext/modules/payment/iostwallet/ib_handler.php', '', 'SSL', false, false),
+        'notify_url'=>tep_href_link('ext/modules/payment/iostpay/ib_handler.php', '', 'SSL', false, false),
         'return_url'=>tep_href_link('checkout_success.php', '', 'SSL'),
         'cancel_url'=>tep_href_link('account.php', '', 'SSL'),
         // 'cancel_url'=>tep_href_link('shopping_cart.php', '', 'SSL'),
@@ -649,12 +649,12 @@ class iostwallet
         $completed_status_id = $this->set_order_status('Completed [iostwallet]', true);
 
 		$sort_order = 0;
-        tep_db_query("insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Enable iostwallet on your webshop?', 'MODULE_PAYMENT_IOSTWALLET_STATUS', 'False', '', '6', '".$sort_order++."', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
+        tep_db_query("insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Enable iostpay on your webshop?', 'MODULE_PAYMENT_IOSTWALLET_STATUS', 'False', '', '6', '".$sort_order++."', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now())");
 		
         tep_db_query("insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Gateway Server', 'MODULE_PAYMENT_IOSTWALLET_GATEWAY_SERVER', 'Production', 'Use the testing or production gateway server for transactions', '6', '".$sort_order++."', 'tep_cfg_select_option(array(\'Production\', \'Test\'), ', now())");
-        tep_db_query("insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Your merchant id', 'MODULE_PAYMENT_IOSTWALLET_MERCHANT_ID', '', 'Your merchant unique identifier (supplied by iostwallet)', '6', '".$sort_order++."', now())");
+        tep_db_query("insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Your merchant id', 'MODULE_PAYMENT_IOSTWALLET_MERCHANT_ID', '', 'Your merchant unique identifier (supplied by iostpay)', '6', '".$sort_order++."', now())");
 		
-        tep_db_query("insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Your IOST AccountID', 'MODULE_PAYMENT_IOSTWALLET_ACCOUNT_ID', '', 'Your account id (supplied for iostwallet)', '6', '".$sort_order++."', now())");
+        tep_db_query("insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Your IOST AccountID', 'MODULE_PAYMENT_IOSTWALLET_ACCOUNT_ID', '', 'Your account id (supplied for iostpay)', '6', '".$sort_order++."', now())");
 		
 		tep_db_query("insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Your CMC API Key', 'MODULE_PAYMENT_CMC_API_KEY', '', 'Your key(supplied for CMC)', '6', '".$sort_order++."', now())");
 		
@@ -670,8 +670,8 @@ class iostwallet
        
         tep_db_query("insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Sort order of display.', 'MODULE_PAYMENT_IOSTWALLET_SORT_ORDER', '0', 'Sort order of display. Lowest is displayed first.', '6', '".$sort_order++."', now())");
 
-        tep_db_query("insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('Set iostwallet Acknowledged Order Status', 'MODULE_PAYMENT_IOSTWALLET_CREATE_ORDER_STATUS_ID', '".$created_status_id."', 'Set the status of orders made with this payment module to this value', '6', '".$sort_order++."', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
-        tep_db_query("insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('Set iostwallet sum too low Order Status', 'MODULE_PAYMENT_IOSTWALLET_SUM_TOO_LOW_ORDER_STATUS_ID', '".$sum_too_low_status_id."', 'Set the status of orders which are paid with insufficient fund (sum too low) to this value', '6', '".$sort_order++."', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
+        tep_db_query("insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('Set iostpay Acknowledged Order Status', 'MODULE_PAYMENT_IOSTWALLET_CREATE_ORDER_STATUS_ID', '".$created_status_id."', 'Set the status of orders made with this payment module to this value', '6', '".$sort_order++."', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
+        tep_db_query("insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('Set iostpay sum too low Order Status', 'MODULE_PAYMENT_IOSTWALLET_SUM_TOO_LOW_ORDER_STATUS_ID', '".$sum_too_low_status_id."', 'Set the status of orders which are paid with insufficient fund (sum too low) to this value', '6', '".$sort_order++."', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
         tep_db_query("insert into configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) values ('Set iostwallet Completed Order Status', 'MODULE_PAYMENT_IOSTWALLET_COMP_ORDER_STATUS_ID', '".$completed_status_id."', 'Set the status of orders which are confirmed as paid (approved) to this value', '6', '".$sort_order++."', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
 
       

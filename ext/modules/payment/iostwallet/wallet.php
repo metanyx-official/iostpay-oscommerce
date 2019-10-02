@@ -14,7 +14,6 @@
      
        $iost_amount    =   number_format((float)$iost_amount, 2, '.', '');
        
-	    
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -134,7 +133,7 @@
             .on('success', function(result) {
 
 				document.getElementById("invoice_status").value =  'success'  ;
-				
+				document.getElementById("page").style.display = 'block'  ;	
 			    setInterval(function () {
 					action_notifyUrl() ;
 				}, 15000);
@@ -151,9 +150,7 @@
 				
 		document.getElementById("cancelledPayment").innerHTML = 'Payment is Failed'  ;
 		    
-	    //  setInterval(function () {
-		//  	window.location.href = cancel_url ;	
-		//  }, 3000);
+	
 		        
                 setInterval(function () {
 					action_notifyUrl() ;

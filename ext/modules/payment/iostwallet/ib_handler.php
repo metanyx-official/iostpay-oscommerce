@@ -6,14 +6,15 @@
  Copyright (c) 2008 osCommerce
  Released under the GNU General Public License
  */
- 
+define('ROOT_DIR', '../../../../') ;
 
-// print_r( $_POST ) ;
-//  die() ;
+include(ROOT_DIR.'admin/includes/configure.php') ;
+
 chdir('../../../../');
 require ('includes/application_top.php');
 reset($HTTP_POST_VARS);
 $result = "VERIFIED";
+$language = "english";
 $ok = true;
 $my_order = null;
 $customer_id = null;
@@ -111,7 +112,7 @@ if ($ok)
     }
 }
 if ($ok) {
-    require_once ('iostwallet_functions.php');
+    require_once ('iostpay_functions.php');
     // $invoice_status = get_invoice_status($HTTP_POST_VARS);
     $ok = false;
     if ( ($HTTP_POST_VARS["invoice_status"] == "pending") || ($HTTP_POST_VARS["invoice_status"] == "created") ) {
@@ -212,9 +213,9 @@ if ($result == 'VERIFIED')
     if ($invoice_approved)
     {
     	// for email
-		include(DIR_WS_LANGUAGES . $language . '/modules/payment/iostwallet.php');
+		include(DIR_WS_CATALOG_LANGUAGES . $language . '/modules/payment/iostpay.php');
         // let's re-create the required arrays
-        require (DIR_WS_CLASSES.'order.php');
+        require (DIR_FS_ADMIN.'includes/classes/order.php');
         $order = new order($HTTP_POST_VARS['order_id']);
         // START STATUS == COMPLETED LOOP
         // initialized for the email confirmation
@@ -226,7 +227,7 @@ if ($result == 'VERIFIED')
         for ($i = 0, $n = sizeof($order->products); $i < $n; $i++)
         { // PRODUCT LOOP STARTS HERE
             // Stock Update - Joao Correia
-            if ((MODULE_PAYMENT_INPAY_DECREASE_STOCK_ON_CREATION=='False') && (STOCK_LIMITED == 'true'))
+            if ((MODULE_PAYMENT_IOSTPAY_DECREASE_STOCK_ON_CREATION=='False') && (STOCK_LIMITED == 'true'))
             {
                 if (DOWNLOAD_ENABLED == 'true')
                 {

@@ -1,7 +1,7 @@
 <?php 
 chdir('../../../../');
 require ('includes/application_top.php');
-require ('iostwallet_functions.php');
+require ('iostpay_functions.php');
 
 
 function conPrice( $invoice_amount ){
