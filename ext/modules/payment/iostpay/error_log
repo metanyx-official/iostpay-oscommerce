@@ -1,0 +1,92 @@
+[25-Sep-2019 10:44:16 UTC] PHP Warning:  Use of undefined constant DIR_FS_ADMIN - assumed 'DIR_FS_ADMIN' (this will throw an Error in a future version of PHP) in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 3
+[25-Sep-2019 10:45:25 UTC] PHP Warning:  Use of undefined constant DIR_FS_ADMIN - assumed 'DIR_FS_ADMIN' (this will throw an Error in a future version of PHP) in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 3
+[25-Sep-2019 10:45:28 UTC] PHP Warning:  Use of undefined constant DOCUMENT_ROOT - assumed 'DOCUMENT_ROOT' (this will throw an Error in a future version of PHP) in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 3
+[25-Sep-2019 10:47:33 UTC] PHP Warning:  include(././././admin/includes/configure.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 3
+[25-Sep-2019 10:47:33 UTC] PHP Warning:  include(././././admin/includes/configure.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 3
+[25-Sep-2019 10:47:33 UTC] PHP Warning:  include(): Failed opening '././././admin/includes/configure.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 3
+[25-Sep-2019 10:47:33 UTC] PHP Warning:  Use of undefined constant HTTP_SERVER - assumed 'HTTP_SERVER' (this will throw an Error in a future version of PHP) in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 4
+[25-Sep-2019 10:47:44 UTC] PHP Warning:  require(././././admin/includes/configure.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 3
+[25-Sep-2019 10:47:44 UTC] PHP Warning:  require(././././admin/includes/configure.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 3
+[25-Sep-2019 10:47:44 UTC] PHP Fatal error:  require(): Failed opening required '././././admin/includes/configure.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 3
+[25-Sep-2019 10:48:08 UTC] PHP Warning:  require(./././admin/includes/configure.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 3
+[25-Sep-2019 10:48:08 UTC] PHP Warning:  require(./././admin/includes/configure.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 3
+[25-Sep-2019 10:48:08 UTC] PHP Fatal error:  require(): Failed opening required './././admin/includes/configure.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 3
+[25-Sep-2019 10:48:24 UTC] PHP Warning:  require(../../../admin/includes/configure.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 3
+[25-Sep-2019 10:48:24 UTC] PHP Warning:  require(../../../admin/includes/configure.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 3
+[25-Sep-2019 10:48:24 UTC] PHP Fatal error:  require(): Failed opening required '../../../admin/includes/configure.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 3
+[25-Sep-2019 10:48:30 UTC] PHP Warning:  require(admin/includes/configure.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 3
+[25-Sep-2019 10:48:30 UTC] PHP Warning:  require(admin/includes/configure.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 3
+[25-Sep-2019 10:48:30 UTC] PHP Fatal error:  require(): Failed opening required 'admin/includes/configure.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 3
+[25-Sep-2019 10:49:21 UTC] PHP Warning:  require(./test1.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 4
+[25-Sep-2019 10:49:21 UTC] PHP Warning:  require(./test1.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 4
+[25-Sep-2019 10:49:21 UTC] PHP Fatal error:  require(): Failed opening required './test1.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 4
+[25-Sep-2019 10:49:36 UTC] PHP Warning:  Use of undefined constant HTTP_SERVER - assumed 'HTTP_SERVER' (this will throw an Error in a future version of PHP) in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 10:50:03 UTC] PHP Warning:  require(../test2.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 4
+[25-Sep-2019 10:50:03 UTC] PHP Warning:  require(../test2.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 4
+[25-Sep-2019 10:50:03 UTC] PHP Fatal error:  require(): Failed opening required '../test2.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 4
+[25-Sep-2019 10:50:12 UTC] PHP Warning:  require(.//../test2.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 4
+[25-Sep-2019 10:50:12 UTC] PHP Warning:  require(.//../test2.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 4
+[25-Sep-2019 10:50:12 UTC] PHP Fatal error:  require(): Failed opening required './/../test2.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 4
+[25-Sep-2019 10:55:03 UTC] PHP Warning:  require(.//../test2.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 4
+[25-Sep-2019 10:55:03 UTC] PHP Warning:  require(.//../test2.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 4
+[25-Sep-2019 10:55:03 UTC] PHP Fatal error:  require(): Failed opening required './/../test2.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 4
+[25-Sep-2019 10:55:08 UTC] PHP Warning:  Use of undefined constant HTTP_SERVER - assumed 'HTTP_SERVER' (this will throw an Error in a future version of PHP) in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 10:55:28 UTC] PHP Warning:  Use of undefined constant HTTP_SERVER - assumed 'HTTP_SERVER' (this will throw an Error in a future version of PHP) in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 10:55:53 UTC] PHP Warning:  Use of undefined constant HTTP_SERVER - assumed 'HTTP_SERVER' (this will throw an Error in a future version of PHP) in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 10:56:48 UTC] PHP Warning:  require(admin/../../../../test2.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 4
+[25-Sep-2019 10:56:48 UTC] PHP Warning:  require(admin/../../../../test2.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 4
+[25-Sep-2019 10:56:48 UTC] PHP Fatal error:  require(): Failed opening required 'admin/../../../../test2.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 4
+[25-Sep-2019 10:56:55 UTC] PHP Warning:  require(/admin/../../../../test2.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 4
+[25-Sep-2019 10:56:55 UTC] PHP Warning:  require(/admin/../../../../test2.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 4
+[25-Sep-2019 10:56:55 UTC] PHP Fatal error:  require(): Failed opening required '/admin/../../../../test2.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 4
+[25-Sep-2019 10:57:11 UTC] PHP Warning:  Use of undefined constant HTTP_SERVER - assumed 'HTTP_SERVER' (this will throw an Error in a future version of PHP) in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 11:06:55 UTC] PHP Warning:  require(../../../../includes/classesorder.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 10
+[25-Sep-2019 11:06:55 UTC] PHP Warning:  require(../../../../includes/classesorder.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 10
+[25-Sep-2019 11:06:55 UTC] PHP Fatal error:  require(): Failed opening required '../../../../includes/classesorder.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 10
+[25-Sep-2019 11:11:13 UTC] PHP Warning:  include(../../../../includes/languages//modules/payment/iostpay.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 11:11:13 UTC] PHP Warning:  include(../../../../includes/languages//modules/payment/iostpay.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 11:11:13 UTC] PHP Warning:  include(): Failed opening '../../../../includes/languages//modules/payment/iostpay.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 11:12:00 UTC] PHP Warning:  include(../../../../includes/languages//modules/payment/iostpay.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 11:12:00 UTC] PHP Warning:  include(../../../../includes/languages//modules/payment/iostpay.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 11:12:00 UTC] PHP Warning:  include(): Failed opening '../../../../includes/languages//modules/payment/iostpay.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 11:12:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tep_not_null() in /home/metanyxi/oscommerce.metanyx.io/includes/classes/order.php:23
+Stack trace:
+#0 /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php(8): order->__construct(122)
+#1 {main}
+  thrown in /home/metanyxi/oscommerce.metanyx.io/includes/classes/order.php on line 23
+[25-Sep-2019 11:12:09 UTC] PHP Warning:  include(../../../../includes/languages//modules/payment/iostpay.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 11:12:09 UTC] PHP Warning:  include(../../../../includes/languages//modules/payment/iostpay.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 11:12:09 UTC] PHP Warning:  include(): Failed opening '../../../../includes/languages//modules/payment/iostpay.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 11:12:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tep_not_null() in /home/metanyxi/oscommerce.metanyx.io/includes/classes/order.php:23
+Stack trace:
+#0 /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php(8): order->__construct(122)
+#1 {main}
+  thrown in /home/metanyxi/oscommerce.metanyx.io/includes/classes/order.php on line 23
+[25-Sep-2019 11:12:22 UTC] PHP Warning:  include(../../../../includes/languages//modules/payment/iostpay.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 11:12:22 UTC] PHP Warning:  include(../../../../includes/languages//modules/payment/iostpay.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 11:12:22 UTC] PHP Warning:  include(): Failed opening '../../../../includes/languages//modules/payment/iostpay.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 11:12:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tep_not_null() in /home/metanyxi/oscommerce.metanyx.io/includes/classes/order.php:23
+Stack trace:
+#0 /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php(8): order->__construct(122)
+#1 {main}
+  thrown in /home/metanyxi/oscommerce.metanyx.io/includes/classes/order.php on line 23
+[25-Sep-2019 11:12:27 UTC] PHP Warning:  include(../../../../includes/languages//modules/payment/iostpay.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 11:12:27 UTC] PHP Warning:  include(../../../../includes/languages//modules/payment/iostpay.php): failed to open stream: No such file or directory in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 11:12:27 UTC] PHP Warning:  include(): Failed opening '../../../../includes/languages//modules/payment/iostpay.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php on line 5
+[25-Sep-2019 11:12:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tep_not_null() in /home/metanyxi/oscommerce.metanyx.io/includes/classes/order.php:23
+Stack trace:
+#0 /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php(8): order->__construct(122)
+#1 {main}
+  thrown in /home/metanyxi/oscommerce.metanyx.io/includes/classes/order.php on line 23
+[25-Sep-2019 11:19:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tep_db_query() in /home/metanyxi/oscommerce.metanyx.io/admin/includes/classes/order.php:29
+Stack trace:
+#0 /home/metanyxi/oscommerce.metanyx.io/admin/includes/classes/order.php(23): order->query(122)
+#1 /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php(8): order->__construct(122)
+#2 {main}
+  thrown in /home/metanyxi/oscommerce.metanyx.io/admin/includes/classes/order.php on line 29
+[25-Sep-2019 11:20:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tep_db_query() in /home/metanyxi/oscommerce.metanyx.io/admin/includes/classes/order.php:29
+Stack trace:
+#0 /home/metanyxi/oscommerce.metanyx.io/admin/includes/classes/order.php(23): order->query(122)
+#1 /home/metanyxi/oscommerce.metanyx.io/ext/modules/payment/iostpay/wallet.php(8): order->__construct(122)
+#2 {main}
+  thrown in /home/metanyxi/oscommerce.metanyx.io/admin/includes/classes/order.php on line 29
